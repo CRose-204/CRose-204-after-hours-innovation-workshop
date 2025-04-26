@@ -1,3 +1,161 @@
-body {
-  background-color: #ffffff;
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
+/*
+FONTS
+.grandstander-<uniquifier> {
+  font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.josefin-slab-<uniquifier> {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+COLORS
+accent: #0E2D63
+accent-2: #E0BCE3
+base: #FCFCFC
+base-2: #E8F7F7
+button: #D10046
+hover: #FFCE84
+text: #120333
+*/
+.about-container{
+  padding: 10rem 15rem 10rem 15rem;
+}
+.about-top{
+  justify-items: center;
+  padding: 0rem 0rem 2.5rem 0rem;
+  text-align: center;
+}
+.about-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.about-left{
+  width: 51.8rem;
+}
+.about-left p{
+  padding: 0rem 0rem 3rem 0rem;
+}
+.btn {
+  background-color: #D10046;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: .5rem .5rem 2.5rem .5rem rgba(18, 3, 51, 25%);
+  color: #FCFCFC;
+  font-family: "Josefin Slab", serif;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 2.24rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.btn :hover {
+  box-shadow: .5rem .5rem 2.5rem .5rem rgba(255, 206, 132, 25%);
+  color: #120333;
+}
+.h-1{
+  font-family: "Grandstander", cursive;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: -1.2%;
+  line-height: 8.4rem;
+}
+.h-2{
+  font-family: "Grandstander", cursive;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1%;
+  line-height: 6rem;
+}
+.h-3{
+  font-family: "Grandstander", cursive;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1%;
+  line-height: 4.8rem;
+}
+.hero{
+  background-image: 
+  linear-gradient(to bottom, rgba(232, 247, 247, 100), rgba(252, 252, 252, 90), rgba(0, 0, 0, 0)),
+  url('images/hero-photo-xlg.jpg');
+  background-size: cover;
+}
+.hero-container{
+  padding: 10rem 19.9rem 60.5rem 19.8rem;
+  text-align: center;
+}
+.hero-container button{
+  margin: 3rem 0rem 0rem 0rem;
+}
+.hero-container p{
+  margin: 2rem 0rem 0rem 0rem;
+}
+html {
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+}
+.navigation{
+  background-color: #E8F7F7;
+}
+.nav-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-left{
+  width: 3.88rem;
+  padding: 0rem 0rem 0rem 15rem;
+}
+.nav-right {
+  display: flex;
+  padding: 0rem 15rem 0rem 0rem;
+}
+.nav-list{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list li{
+  padding: 0rem 2.5rem 0rem 2.5rem;
+}
+p { font-family: "Grandstander", cursive;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.5%;
+  line-height: 2.24rem;
+}
+.schedule{
+  background-color: #0E2D63;
+  color: #FCFCFC;
+}
+.schedule-container{
+  padding: 10rem 22rem 10rem 22rem;
+}
+.schedule-bottom{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.schedule-bottom p {
+  padding: .5rem 0rem 1rem 0rem;
+}
+.schedule-top{
+  justify-items: center;
+  padding: 0rem 0rem 3rem 0rem;
+  text-align: center;
 }
