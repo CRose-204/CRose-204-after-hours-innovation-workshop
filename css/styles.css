@@ -25,88 +25,9 @@ button: #D10046
 hover: #FFCE84
 text: #120333
 */
-.about-container{
-  padding: 10rem 15rem 10rem 15rem;
-}
-.about-top{
-  justify-items: center;
-  padding: 0rem 0rem 2.5rem 0rem;
-  text-align: center;
-}
-.about-bottom{
-  display: flex;
-  justify-content: space-between;
-}
-.about-left{
-  width: 51.8rem;
-}
-.about-left p{
-  padding: 0rem 0rem 3rem 0rem;
-}
-.btn {
-  background-color: #D10046;
-  border-radius: .5rem;
-  border: none;
-  box-shadow: .5rem .5rem 2.5rem .5rem rgba(18, 3, 51, 25%);
-  color: #FCFCFC;
-  font-family: "Josefin Slab", serif;
-  font-style: normal;
-  font-size: 2rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 2.24rem;
-  padding: 1rem 2rem 1rem 2rem;
-}
-.btn :hover {
-  box-shadow: .5rem .5rem 2.5rem .5rem rgba(255, 206, 132, 25%);
-  color: #120333;
-}
-.h-1{
-  font-family: "Grandstander", cursive;
-  font-size: 7rem;
-  font-style: normal;
-  font-weight: 700;
-  justify-content: center;
-  letter-spacing: -1.2%;
-  line-height: 8.4rem;
-}
-.h-2{
-  font-family: "Grandstander", cursive;
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: -1%;
-  line-height: 6rem;
-}
-.h-3{
-  font-family: "Grandstander", cursive;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: -1%;
-  line-height: 4.8rem;
-}
-.hero{
-  background-image: 
-  linear-gradient(to bottom, rgba(232, 247, 247, 100), rgba(252, 252, 252, 90), rgba(0, 0, 0, 0)),
-  url('images/hero-photo-xlg.jpg');
-  background-size: cover;
-}
-.hero-container{
-  padding: 10rem 19.9rem 60.5rem 19.8rem;
-  text-align: center;
-}
-.hero-container button{
-  margin: 3rem 0rem 0rem 0rem;
-}
-.hero-container p{
-  margin: 2rem 0rem 0rem 0rem;
-}
-html {
-  font-size: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1440px;
+/* Navigation */
+.menu{
+  display: none;
 }
 .navigation{
   background-color: #E8F7F7;
@@ -132,19 +53,76 @@ html {
 .nav-list li{
   padding: 0rem 2.5rem 0rem 2.5rem;
 }
-p { font-family: "Grandstander", cursive;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: -0.5%;
-  line-height: 2.24rem;
+.workshop-logo-sm{
+  display: none;
 }
+.workshop-logo-xlg{
+  height:9.119rem;
+  width: 38.8rem;
+}
+/* Hero */
+.hero{
+  background-image: url("../images/hero-background-xlg.jpg");
+  background-repeat: no-repeat;
+}
+.hero h1 {
+  padding: 0rem 0rem 3rem 0rem;
+  text-align: center;
+}
+.hero-button {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-container{
+  padding: 10rem 19.8rem 59.5rem 19.9rem;
+  width: 104.3rem;
+}
+.hero-container p{
+  padding: 0rem 14.6rem 3rem 14.5rem;
+  text-align: center;
+}
+
+/* About */
+.about{
+  background-image: url("../images/about-background-xlg.jpg");
+  background-repeat: no-repeat;
+}
+.about-container{
+  padding: 10rem 15rem 10rem 15rem;
+}
+.about h2 {
+  justify-items: center;
+  padding: 0rem 0rem 3rem 0rem;
+  text-align: center;
+}
+.about-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.about-left{
+  width: 51.8rem;
+}
+.about-left p{
+  padding: 0rem 0rem 3rem 0rem;
+}
+.about-photo-sm {
+  display: none;
+}
+.about-photo-xlg{
+  height: 40.7rem;
+  width: 55.842rem;
+}
+
+/* Schedule */
 .schedule{
   background-color: #0E2D63;
   color: #FCFCFC;
 }
-.schedule-container{
-  padding: 10rem 22rem 10rem 22rem;
+.schedule h3{
+  justify-items: center;
+  padding: 0rem 0rem 3rem 0rem;
+  text-align: center;
 }
 .schedule-bottom{
   display: flex;
@@ -152,10 +130,441 @@ p { font-family: "Grandstander", cursive;
   text-align: center;
 }
 .schedule-bottom p {
-  padding: .5rem 0rem 1rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
 }
-.schedule-top{
-  justify-items: center;
+.schedule-container{
+  padding: 10rem 22rem 10rem 22rem;
+}
+
+/* Speakers */
+.speakers{
+  background-image: url("../images/speakers-background-xlg.jpg");
+  background-repeat: no-repeat;
+}
+.speaker-container {
+  padding: 10rem 15rem 10rem 15rem;
+}
+.speaker-top{
+  justify-content: center;
   padding: 0rem 0rem 3rem 0rem;
   text-align: center;
+}
+.speaker-bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.speaker-1 h3{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.speaker-1 p{
+  padding: 2rem 0rem 0rem 0rem;
+}
+.speaker-2 h3{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.speaker-2 p{
+  padding: 2rem 0rem 0rem 0rem;
+}
+.speaker-3 h3{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.speaker-3 p{
+  padding: 2rem 0rem 0rem 0rem;
+}
+
+/* Connect */
+.connect {
+  background-image: url("../images/connect-background-xlg.jpg");
+  background-repeat: no-repeat;
+  color: #FCFCFC;
+}
+.connect-container {
+  padding: 10rem 0rem 10rem 5rem;
+  width: 75.2rem;
+}
+.connect h3 {
+  padding: 0rem 0rem 3rem 0rem;
+}
+.connect p {
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+/* Footer */
+.facebook{
+  padding: 0rem 0rem 0rem 2.5rem;
+  text-decoration: none;
+}
+.footer {
+  background-color: #E8F7F7;
+}
+.footer-container {
+  display:flex;
+  justify-content: space-between;
+  padding: 1.893rem 15rem 1.8rem 15rem;
+}
+.footer-list{
+  display: flex;
+}
+.footer-list li{
+  padding: 0rem 5rem 0rem 0rem;
+}
+.footer-right{
+  display: flex;
+  align-items: center;
+}
+.instagram{
+  margin: 0rem 0rem 0rem 2.5rem;
+  text-decoration: none;
+}
+.workshop-logo-footer-sm{
+  display: none;
+  }
+.workshop-logo-footer-xlg{
+  height: 6.277rem;
+  width: 26.712rem;
+}
+
+.btn {
+  background-color: #D10046;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: .5rem .5rem 2.5rem .5rem rgba(18, 3, 51, 25%);
+  color: #FCFCFC;
+  font-family: "Josefin Slab", serif;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 2.4rem;
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: center;
+}
+.btn :hover {
+  box-shadow: .5rem .5rem 2.5rem .5rem rgba(255, 206, 132, 50%);
+}
+h1{
+  font-family: "Grandstander", cursive;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: -1.2%;
+  line-height: 8.4rem;
+}
+h2{
+  font-family: "Grandstander", cursive;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1%;
+  line-height: 6rem;
+}
+h3{
+  font-family: "Grandstander", cursive;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1%;
+  line-height: 4.8rem;
+}
+html {
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p { 
+  font-family: "Grandstander", cursive;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.5%;
+  line-height: 2.24rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  /* Navigation */
+.menu{
+  display: contents;
+  height:5rem;
+  width:5rem;
+}
+.navigation{
+  background-color: #E8F7F7;
+  height: 7rem;
+  width: 42.8em;
+}
+.nav-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 37rem;
+}
+.nav-left{
+  padding: 0rem 0rem 0rem 2rem;
+}
+.nav-list li{
+  display: none;
+}
+.nav-right {
+  padding: 0rem 0rem 0rem 3.8rem;
+}
+.nav-list{
+  display: none;
+}
+.workshop-logo-sm{
+  display:contents;
+  height:4.777rem;
+  width: 19.721rem;
+
+}
+.workshop-logo-xlg{
+  display: none;
+}
+
+/* Hero */
+.hero{
+  background-image: url("../images/hero-background-sm.jpg");
+  background-repeat: no-repeat;
+}
+.hero h1 {
+  padding: 0rem 0rem 1rem 0rem;
+  text-align: center;
+}
+.hero-button {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-container{
+  padding: 15rem 2rem 45rem 2rem;
+  width: 38.8rem;
+}
+.hero-container p{
+  padding: 0rem 0rem 2rem 0rem;
+  text-align: center;
+}
+
+/* About */
+.about{
+  background-image: url("../images/about-background-sm.jpg");
+  background-repeat: no-repeat;
+}
+.about-container{
+  padding: 5rem 0rem 0rem 0rem;
+}
+.about h2 {
+  justify-items: start;
+  padding: 0rem 19rem 1rem 2rem;
+  text-align: start;
+}
+.about-bottom{
+  display: flex;
+  flex-direction: column;
+}
+.about-button{
+  padding: 0rem 0rem 0rem 2rem;
+}
+.about-left{
+  width: 51.8rem;
+}
+.about-left p{
+  padding: 0rem 2rem 2rem 2rem;
+  width: 38.8rem;
+}
+.about-photo-sm{
+  height: 40.7rem;
+  width: 55.842rem;
+}
+.about-photo-xlg{
+  display: none;
+}
+.about-right{
+  height: 40.7rem;
+  width: 55.842rem;
+}
+
+/* Schedule */
+.schedule{
+  background-color: #0E2D63;
+  color: #FCFCFC;
+  height: 100.9rem;
+  width: 42.8em;
+}
+.schedule h3{
+  justify-items: center;
+  padding: 0rem 0rem 1rem 0rem;
+  text-align: center;
+}
+.schedule-bottom{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.schedule-bottom{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.schedule-bottom p {
+  padding: 0rem 0rem 1rem 0rem;
+}
+.schedule-container{
+  padding: 5rem 7.5rem 5rem 7.6rem;
+}
+
+
+/* Speakers */
+.speakers{
+  background-image: url("../images/speakers-background-sm.jpg");
+  background-repeat: no-repeat;
+}
+.speaker-container {
+  padding: 5rem 1.9rem 5rem 1.8rem;
+}
+.speaker-top{
+  justify-content: center;
+  padding: 0rem 0rem 2rem 0rem;
+  text-align: center;
+}
+.speaker-bottom{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.speaker-1 h3{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.speaker-1 p{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.speaker-2{
+  padding: 2rem 0rem 0rem 0rem;
+}
+.speaker-2 h3{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.speaker-2 p{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.speaker-3{
+  padding: 2rem 0rem 0rem 0rem;
+}
+.speaker-3 h3{
+  padding: 1rem 0rem 0rem 0rem;
+}
+.speaker-3 p{
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+/* Connect */
+.connect {
+  background-image: url("../images/connect-background-sm.jpg");
+  background-repeat: no-repeat;
+  color: #FCFCFC;
+}
+.connect-container {
+  padding: 5rem 2rem 5rem 2rem;
+  width: 38.8rem;
+}
+.connect h3 {
+  padding: 0rem 0rem 1rem 0rem;
+}
+.connect p {
+  padding: 0rem 0rem 2rem 0rem;
+}
+
+/* Footer */
+.facebook{
+  padding: 0rem 0rem 0rem 2.5rem;
+  text-decoration: none;
+}
+.footer {
+  background-color: #E8F7F7;
+  height: 12.3rem;
+  width: 42.8em;
+}
+.footer-container {
+  display:flex;
+  flex-direction: column;
+  padding: .991rem 2rem 1rem 2rem;
+}
+.footer-list{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-right{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.instagram{
+  margin: 0rem 0rem 0rem 2.5rem;
+  text-decoration: none;
+}
+.workshop-logo-footer-sm{
+display: contents; 
+height: 6.282rem;
+width:26.722rem;
+}
+.workshop-logo-footer-xlg{
+  display: none; 
+}
+
+.btn {
+  background-color: #D10046;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: .5rem .5rem 2.5rem .5rem rgba(18, 3, 51, 25%);
+  color: #FCFCFC;
+  font-family: "Josefin Slab", serif;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 2.4rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  text-align: center;
+}
+.btn :hover {
+  box-shadow: .5rem .5rem 2.5rem .5rem rgba(255, 206, 132, 50%);
+}
+h1{
+  font-family: "Grandstander", cursive;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: -1%;
+  line-height: 6rem;
+}
+h2{
+  font-family: "Grandstander", cursive;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1%;
+  line-height: 4.8rem;
+}
+h3{
+  font-family: "Grandstander", cursive;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0%;
+  line-height: 3.6rem;
+}
+html {
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p { 
+  font-family: "Grandstander", cursive;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.5%;
+  line-height: 2.24rem;
+}
 }
